@@ -16,7 +16,5 @@ export const envValidationSchema = Joi.object({
   REDIS_HOST: Joi.string().default('localhost'),
   REDIS_PORT: Joi.number().default(6379),
 
-  RABBITMQ_URL: Joi.string().default(
-    'amqp://dispatch:dispatch@localhost:5672',
-  ),
+  RABBITMQ_URL: Joi.string().default('amqp://dispatch:dispatch@localhost:5672'),
 });
